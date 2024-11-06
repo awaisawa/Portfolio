@@ -63,6 +63,82 @@ nav ul li {
   margin-bottom: 10px;
 }
 
+
+/*-------------------For PortFolio--------------------------*/
+
+
+/* General container styling */
+#portfolio .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between columns */
+}
+
+.topColumn, .otherColumn {
+  flex: 1 1 calc(25% - 20px); /* 4 columns per row */
+  min-width: 200px; /* Minimum column width */
+  max-width: 300px; /* Maximum column width */
+  box-sizing: border-box;
+}
+
+.outline {
+  background: #2a2e33;
+  padding: 15px;
+  border-radius: 8px;
+  height: 100%; /* Full height for uniformity */
+  display: flex;
+  flex-direction: column;
+}
+
+.cardTitle {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.cardImg {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.topButtonCentered, .otherButtonCentered {
+  text-align: center;
+  margin-top: auto; /* Ensures button is at the bottom */
+}
+
+.portfoliop {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin: 10px 0;
+}
+
+/* Media queries for responsive layout adjustments */
+@media screen and (max-width: 1024px) {
+  .topColumn, .otherColumn {
+    flex: 1 1 calc(33.33% - 20px); /* 3 columns per row */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .topColumn, .otherColumn {
+    flex: 1 1 calc(50% - 20px); /* 2 columns per row */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .topColumn, .otherColumn {
+    flex: 1 1 100%; /* 1 column per row */
+  }
+}
+
+
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
 
 html, body, div, span, applet, object,
