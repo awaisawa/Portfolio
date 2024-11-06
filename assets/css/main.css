@@ -137,6 +137,47 @@ nav ul li {
     flex: 1 1 100%; /* 1 column per row */
   }
 }
+/* Ensure the row and columns are flexible */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between columns */
+}
+
+.topColumn, .otherColumn {
+  flex: 1 1 calc(25% - 20px); /* Four columns per row with spacing */
+  min-width: 200px; /* Ensure minimum width for smaller screens */
+  max-width: 300px; /* Maximum width to keep columns uniform */
+  box-sizing: border-box;
+}
+
+.outline {
+  background: #2a2e33;
+  padding: 15px;
+  border-radius: 8px;
+  height: 100%; /* Ensures equal height */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Media queries to adjust column count based on screen size */
+@media screen and (max-width: 1024px) {
+  .topColumn, .otherColumn {
+    flex: 1 1 calc(33.33% - 20px); /* Three columns per row */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .topColumn, .otherColumn {
+    flex: 1 1 calc(50% - 20px); /* Two columns per row */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .topColumn, .otherColumn {
+    flex: 1 1 100%; /* One column per row */
+  }
+}
 
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
