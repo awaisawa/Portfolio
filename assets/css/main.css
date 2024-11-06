@@ -64,78 +64,8 @@ nav ul li {
 }
 
 
-/*-------------------For PortFolio--------------------------*/
 
 
-.container {
-  max-width: 1200px; /* Adjust based on your page design */
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.column {
-  flex: 1 1 calc(25% - 20px); /* Four columns per row */
-  min-width: 200px; /* Minimum column width */
-  max-width: 300px; /* Maximum column width */
-  box-sizing: border-box;
-}
-
-.outline {
-  background: #2a2e33;
-  padding: 15px;
-  border-radius: 8px;
-  height: 100%; /* Ensure equal height */
-  display: flex;
-  flex-direction: column;
-}
-
-.cardTitle {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.cardImg {
-  width: 100%;
-  height: auto;
-  margin-bottom: 10px;
-}
-
-.buttonCentered {
-  text-align: center;
-  margin-top: auto; /* Pushes button to the bottom */
-}
-
-.portfoliop {
-  font-size: 0.9rem;
-  line-height: 1.4;
-  margin: 10px 0;
-}
-
-/* Responsive Adjustments */
-@media screen and (max-width: 1024px) {
-  .column {
-    flex: 1 1 calc(33.33% - 20px); /* Three columns per row */
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .column {
-    flex: 1 1 calc(50% - 20px); /* Two columns per row */
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .column {
-    flex: 1 1 100%; /* One column per row */
-  }
-}
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
 
