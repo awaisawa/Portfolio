@@ -10,61 +10,6 @@
 /*
 My Changes
 */
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-.topColumn, .otherColumn {
-  flex: 1 1 45%;
-}
-/* Medium screens */
-@media screen and (max-width: 768px) {
-  .topColumn, .otherColumn {
-    flex: 1 1 100%;
-  }
-  h1, h2 {
-    font-size: 1.5rem;
-  }
-}
-
-/* Small screens */
-@media screen and (max-width: 480px) {
-  h1, h2 {
-    font-size: 1.2rem;
-  }
-  .icons li {
-    display: inline-block;
-    margin: 0 10px;
-  }
-  .aboutMe, .portfoliop {
-    font-size: 0.9rem;
-    line-height: 1.4;
-  }
-}
-img {
-  max-width: 100%;
-  height: auto;
-}
-body {
-  font-size: 1rem;
-}
-
-@media screen and (max-width: 736px) {
-  body {
-    font-size: 0.9rem;
-  }
-}
-nav ul {
-  display: flex;
-  flex-direction: column;
-}
-nav ul li {
-  margin-bottom: 10px;
-}
-
-
-
 
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
