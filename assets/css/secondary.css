@@ -45,7 +45,8 @@
 /* Styling for portfolio text */
 .portfoliop {
     margin: 8px 0;
-    color: #333;
+	 color: white; /* Make the text white */
+    /*color: #333;*/
     line-height: 1.5;
     text-align: justify;
     flex-grow: 1; /* Ensures text fills space and pushes button to bottom */
