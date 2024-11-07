@@ -15,7 +15,8 @@
 }
 
 .topColumn {
-    flex: 1 1 calc(33.33% - 16px); /* Three columns per row */
+    /*flex: 1 1 calc(33.33% - 16px);*/ /* Three columns per row */
+	flex: 1 1 calc(25% - 16px); /* Four columns per row */
     box-sizing: border-box;
 }
 
