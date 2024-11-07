@@ -1,7 +1,7 @@
 /* Portfolio Row - using grid for precise control */
 .row {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* 4 columns on larger screens */
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
     gap: 16px; /* Space between columns */
     padding: 16px;
     margin: 0 auto;
@@ -19,7 +19,8 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    height: 100%; /* Ensure each card fills available height */
+    height: auto; /* Adjust card height to fit content */
+    min-height: 300px; /* Minimum height to maintain consistency */
 }
 
 /* Outline for content cards */
@@ -50,9 +51,8 @@
 /* Image Styling */
 .cardImg {
     width: 100%;
-    height: auto;
-    max-height: 150px; /* Limit image height for consistency */
-    object-fit: cover;
+    height: 200px; /* Fixed height for image consistency */
+    object-fit: cover; /* Ensure images cover the area without distortion */
     border-radius: 8px;
     margin-bottom: 16px;
 }
@@ -85,14 +85,14 @@
 /* 3 Columns on Medium Screens */
 @media screen and (max-width: 1024px) {
     .row {
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Three columns */
+        grid-template-columns: repeat(3, 1fr); /* Three columns */
     }
 }
 
 /* 2 Columns on Small Screens */
 @media screen and (max-width: 768px) {
     .row {
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Two columns */
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
     }
 }
 
@@ -102,6 +102,7 @@
         grid-template-columns: 1fr; /* Full width for single-column layout */
     }
 }
+
 
 /* Additional CSS added to template post download */
 
