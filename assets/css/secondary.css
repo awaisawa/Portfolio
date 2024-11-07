@@ -13,9 +13,11 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: #f5f5f5;
+    /*background-color: #f5f5f5;*/
+	background-color: transparent; /* Make card background transparent */
     padding: 16px;
-    border: 1px solid #ddd;
+    /*border: 1px solid #ddd;*/
+	border: 1px solid rgba(255, 255, 255, 0.1); /* Light border for visibility */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -37,6 +39,7 @@
     font-weight: bold;
     font-size: 1.2rem;
     margin: 8px 0;
+	color: white; /* Ensure the title text is white */
 }
 
 /* Styling for portfolio text */
@@ -68,18 +71,33 @@
 
 /* Button Styling */
 .button {
-    padding: 8px 16px;
+    /*padding: 8px 16px;
     background-color: #007bff;
     color: #fff;
     text-decoration: none;
     border-radius: 4px;
     transition: background-color 0.3s;
+	*/
+	padding: 10px 20px;
+    background-color: #333; /* Dark background to match black theme */
+    color: white; /* White text for contrast */
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid #444; /* Subtle border to distinguish the button */
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 .button:hover {
-    background-color: #0056b3;
+    /*background-color: #0056b3;*/
+	 background-color: #555; /* Lighter background on hover */
+    transform: translateY(-2px); /* Slight hover effect to make it feel interactive */
 }
-
+.button:focus {
+    outline: none; /* Removes the default outline on focus */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Custom outline on focus */
+}
 /* Responsive Adjustments */
 
 /* 3 Columns on Medium Screens */
