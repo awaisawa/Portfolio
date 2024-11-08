@@ -85,6 +85,14 @@
     margin-bottom: 16px;
 }
 
+.introPic {
+    max-width: 200px;
+    max-height: 275px;
+    border-radius: 4px;
+    float: left;
+    margin-right: 10px
+}
+
 /* Centered Button */
 .currentButtonCentered, .topButtonCentered, .otherButtonCentered {
     display: flex;
