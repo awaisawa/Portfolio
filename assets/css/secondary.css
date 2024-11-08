@@ -26,7 +26,7 @@
 }
 .rowintro {
     display: grid;
-    grid-template-columns: repeat(1fr); /* 3 columns */
+    grid-template-columns: 1fr; /* 1 columns */
     gap: 16px; /* Space between columns */
     padding: 16px;
     margin: 0 auto;
