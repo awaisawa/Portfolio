@@ -6,6 +6,13 @@
     padding: 16px;
     margin: 0 auto;
 }
+.rowintro {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column */
+    gap: 16px; /* Space between columns */
+    padding: 16px;
+    margin: 0 auto;
+}
 
 /* Column / Card Styling */
 .currentColumn, .topColumn, .otherColumn {
