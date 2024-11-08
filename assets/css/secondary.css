@@ -6,13 +6,6 @@
     padding: 16px;
     margin: 0 auto;
 }
-.rowintro {
-    display: grid;
-    grid-template-columns: 1fr; /* Single column */
-    gap: 16px; /* Space between columns */
-    padding: 16px;
-    margin: 0 auto;
-}
 
 /* Column / Card Styling */
 .currentColumn, .topColumn, .otherColumn {
@@ -31,6 +24,30 @@
     height: auto; /* Adjust card height to fit content */
     min-height: 300px; /* Minimum height to maintain consistency */
 }
+.rowintro {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center;     /* Center the content vertically */
+    padding: 16px;
+    margin: 0 auto;
+    gap: 16px;
+    width: 100%;
+}
+
+.IntroColumn {
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: space-between; /* Space between image and text */
+    width: 100%;  /* Take up the full available space */
+    max-width: 1200px; /* Optional: Maximum width to prevent it from becoming too wide */
+}
+
+.introPict {
+    width: 25%; /* Image takes up 25% of the container width */
+    object-fit: cover; /* Ensures the image covers the space without distortion */
+    border-radius: 8px; /* Optional: Rounded corners for the image */
+}
+
 
 /* Outline for content cards */
 .outline {
@@ -123,6 +140,21 @@
     .row {
         grid-template-columns: repeat(2, 1fr); /* Two columns */
     }
+	
+	.rowintro {
+        flex-direction: column; /* Stack the image and text vertically */
+        text-align: center; /* Center text for smaller screens */
+    }
+
+    .IntroColumn {
+        flex-direction: column; /* Stack image and text vertically */
+        width: 100%;
+    }
+
+    .introPict {
+        width: 100%; /* Image takes up full width on small screens */
+        margin-bottom: 16px; /* Space between image and text */
+    }
 }
 
 /* 1 Column on Extra Small Screens */
@@ -130,8 +162,23 @@
     .row {
         grid-template-columns: 1fr; /* Full width for single-column layout */
     }
+	
+	.rowintro {
+        padding: 16px; /* Adjust padding for smaller screens */
+    }
+
+    .IntroColumn {
+        flex-direction: column; /* Stack vertically */
+        width: 100%;
+    }
+
+    .introPict {
+        width: 100%; /* Image takes full width on extra small screens */
+        margin-bottom: 16px; /* Add space between image and text */
+    }
 }
 
+/* Media query for responsiveness */
 
 /* Additional CSS added to template post download */
 
