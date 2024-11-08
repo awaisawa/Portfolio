@@ -87,8 +87,8 @@
 
 .introPic {
     width: 35%;
-    height: 35%; /* Fixed height for image consistency */
-    object-fit: cover; /* Ensure images cover the area without distortion */
+    height: auto; /* Adjust height according to the width */
+    object-fit: cover; /* Ensure the image covers the space without distortion */
     border-radius: 8px;
     margin-bottom: 16px;
 }
