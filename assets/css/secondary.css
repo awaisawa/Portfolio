@@ -76,6 +76,18 @@
     flex-grow: 1; /* Ensures text fills space and pushes button to bottom */
 }
 
+.portfolioContact {
+    display: flex;                 /* Use flexbox for layout */
+    flex-direction: column;        /* Stack children vertically */
+    justify-content: center;       /* Center items vertically */
+    align-items: center;           /* Center items horizontally */
+    margin: 8px 0;
+    color: white;                  /* Make the text white */
+    line-height: 1.5;
+    text-align: center;            /* Center the text itself */
+    flex-grow: 1;                  /* Ensures text fills space */
+}
+
 /* Image Styling */
 .cardImg {
     width: 100%;
