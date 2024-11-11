@@ -146,14 +146,7 @@
     border: 2px solid #444; /* Subtle border to distinguish the button */
     transition: background-color 0.3s, transform 0.2s;
 }
-.buttonTxt {
-    margin: 8px 0;
-	 color: #333; /* Make the text white */
-    /*color: #333;*/
-    line-height: 1.5;
-    text-align: justify;
-    flex-grow: 1; /* Ensures text fills space and pushes button to bottom */
-}
+
 .button:hover {
     /*background-color: #0056b3;*/
 	 background-color: #555; /* Lighter background on hover */
