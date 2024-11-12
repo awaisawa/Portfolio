@@ -101,7 +101,7 @@
     width: 35%;
     height: auto; /* Adjust height according to the width */
     object-fit: cover; /* Ensure the image covers the space without distortion */
-    border-radius: 8px;
+    border-radius: 5px;
     margin-bottom: 16px;
 	/* Add border with a light color for contrast against dark theme */
     border: 4px solid #fff; /* White border to stand out on black background */
